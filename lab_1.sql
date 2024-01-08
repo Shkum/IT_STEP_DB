@@ -1,2 +1,2 @@
 -- Завдання 2
-ALTER DATABASE sample RENAME TO example;
+DROP DATABASE IF EXISTS example;
