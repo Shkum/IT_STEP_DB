@@ -1,3 +1,3 @@
--- Homework 02
+-- Homework 03
 
-ALTER DATABASE "Birds" RENAME TO cats;
+DROP DATABASE cats;
