@@ -1,5 +1,4 @@
 -- Homework 05
--- Відображення усіх фруктів
+-- Відображення усіх назв овочів та фруктів
 
-SELECT * FROM tab
-WHERE item_type = 'fruit';
+SELECT item_name FROM tab;
