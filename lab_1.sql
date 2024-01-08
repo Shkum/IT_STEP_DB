@@ -1,4 +1,4 @@
 -- Завдання 5
 
-SELECT DISTINCT country
+SELECT DISTINCT city
 FROM students_grades
