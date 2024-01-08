@@ -1,4 +1,4 @@
 -- Завдання 5
 
-SELECT DISTINCT city
+SELECT DISTINCT group_name
 FROM students_grades
