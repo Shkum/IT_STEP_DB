@@ -1,4 +1,5 @@
 -- Homework 05
--- Відображення усіх кольорів. Кольори мають бути унікальними
+-- Відображення фруктів певного кольору
 
-SELECT DISTINCT item_color FROM tab;
+SELECT item_name, item_color FROM tab
+WHERE item_color = 'green';
