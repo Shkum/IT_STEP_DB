@@ -1,3 +1,3 @@
 -- Завдання 5
 
-SELECT student_name FROM students_grades
+SELECT average_grade_per_year FROM students_grades
