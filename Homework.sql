@@ -1,4 +1,4 @@
 -- Homework 05
--- Відображення усіх назв овочів та фруктів
+-- Відображення усіх кольорів. Кольори мають бути унікальними
 
-SELECT item_name FROM tab;
+SELECT DISTINCT item_color FROM tab;
