@@ -1,3 +1,3 @@
--- Homework 01
+-- Homework 02
 
-CREATE DATABASE "Birds"
+ALTER DATABASE "Birds" RENAME TO cats;
