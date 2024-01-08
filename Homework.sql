@@ -1,3 +1,4 @@
--- Homework 03
+-- Homework 04
 
-DROP DATABASE cats;
+CREATE DATABASE Vegetables_and_fruits;
+
