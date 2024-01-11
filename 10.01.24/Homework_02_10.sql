@@ -3,5 +3,6 @@
 
 SELECT *
 FROM tab
-WHERE calory = (SELECT MIN(calory)
-				FROM tab)
+WHERE item_type = 'fruit' AND calory = (SELECT MIN(calory)
+										FROM tab
+									    WHERE item_type = 'fruit')
