@@ -1,0 +1,33 @@
+
+CREATE TABLE Departments (
+    Id SERIAL PRIMARY KEY,
+    Financing MONEY NOT NULL DEFAULT 0 CHECK (CAST(Financing AS NUMERIC) >= 0),
+    Name VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE Faculties (
+    Id SERIAL PRIMARY KEY,
+    Dean VARCHAR(255) NOT NULL,
+    Name VARCHAR(100) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE Groups (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(10) NOT NULL UNIQUE,
+    Rating INT NOT NULL CHECK (Rating >= 0 AND Rating <= 5),
+    Year INT NOT NULL CHECK (Year >= 1 AND Year <= 5)
+);
+
+
+CREATE TABLE Teachers (
+    Id SERIAL PRIMARY KEY,
+    EmploymentDate DATE NOT NULL CHECK (EmploymentDate >= '1990-01-01'),
+    IsAssistant BOOLEAN NOT NULL DEFAULT FALSE,
+    IsProfessor BOOLEAN NOT NULL DEFAULT FALSE,
+    Name VARCHAR NOT NULL,
+    Position VARCHAR NOT NULL,
+    Premium MONEY NOT NULL DEFAULT 0 CHECK (CAST(Premium AS NUMERIC) >= 0),
+    Salary MONEY NOT NULL CHECK (CAST(Salary AS NUMERIC) > 0),
+    Surname VARCHAR NOT NULL
+);
