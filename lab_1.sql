@@ -1,2 +1,0 @@
--- Завдання 4
---CREATE DATABASE Logbook
